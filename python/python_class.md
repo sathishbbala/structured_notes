@@ -1,43 +1,4 @@
 
-# Sets
-
-In Python, a set is an unordered collection of elements where every item is unique (no duplicates allowed) and unindexed. Sets are written using curly braces {}.
-Think of a set like a physical bag of items: you can toss things in, but there is no specific order, and if you throw a duplicate item in, it just blends into the original one.
-
-
-``` python
-# 1. Creating a set (notice the duplicate "Apple" will be removed automatically)
-fruits = {"Apple", "Banana", "Cherry", "Apple"}
-print(fruits)  # Output: {'Banana', 'Cherry', 'Apple'} (Order may vary!)
-
-# 2. Checking if an item exists (Very fast in sets)
-print("Banana" in fruits)  # Output: True
-
-# 3. Adding a new item
-fruits.add("Orange")
-print(fruits)  # Output: {'Banana', 'Cherry', 'Apple', 'Orange'}
-
-# 4. Removing an item
-fruits.remove("Cherry")
-print(fruits)  # Output: {'Banana', 'Apple', 'Orange'}
-
-# Powerful Set Operations (Mathematical)
-# Sets are heavily used because they allow you to perform mathematical operations like
-# unions and intersections instantly.
-
-set_a = {1, 2, 3, 4}
-set_b = {3, 4, 5, 6}
-
-# Union (Combine both, removing duplicates)
-print(set_a | set_b)  # Output: {1, 2, 3, 4, 5, 6}
-
-# Intersection (Items present in BOTH sets)
-print(set_a & set_b)  # Output: {3, 4}
-
-# Difference (Items in set_a that are NOT in set_b)
-print(set_a - set_b)  # Output: {1, 2}
-```
-
 # Lists
 In Python, a list is an ordered, changeable (mutable) collection of items that allows duplicate values. Lists are the most versatile and widely used data structure in Python, written using square brackets [].
 Think of a list like a dynamic shopping list: you can keep adding items, crossing items out, rearranging them, or changing them at any point.
