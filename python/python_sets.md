@@ -15,7 +15,7 @@ set_c = {"Raman", "Artificial Intelligence", 89, True}
 for element in set_a:
   print(element)
 ```
-8. It is possible to check if an item exists in a set or not using the following syntax.
+8. To check if an item exists in a set or not, use the following syntax:
 ``` python
 set_b = {1,2,3,4,5]
 print(6 in set_b)
@@ -63,7 +63,9 @@ set_a.update(set_c)
     - The intersection() method keeps ONLY the duplicates.
     - The '&' operator can be used instead of intersection().
     - The difference() method keeps the items from the first set that are not in the other set(s).
-    - The symmetric_difference() method keeps all items EXCEPT the duplicates.
+    - The symmetric_difference() method keeps all items EXCEPT the duplicates. This will remove an item from the set only if the same item is in other set.
+
+* Frozenset will include later
 
 
 
